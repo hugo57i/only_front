@@ -1,0 +1,26 @@
+<div class="card text-center" [ngStyle]="{'width': '95%', 'margin-left': '2.5%', 'margin-top': '40px', 'margin-bottom': '70px'}">
+    <div class="card-header">
+      {{product.nom}}
+    </div>
+    <div class="card-body">
+      <img [src]="'../../' + product.pathImg" alt="Aucune image trouvée" width="250" height="210">
+      <div class="infos-div">
+        <h6 [ngStyle]="{'margin-top': '1.3px', 'margin-right': '10px'}">Type : </h6>
+        <p class="card-text" >{{product.type}}</p>
+      </div>
+      <div class="infos-div">
+        <h6 [ngStyle]="{'margin-top': '1.3px', 'margin-right': '10px'}">Catégorie : </h6>
+        <p class="card-text" >{{product.categorie}}</p>
+      </div>
+      <h3>Description</h3>
+      <p class="card-text">{{product.description}}</p>
+      <div class="infos-div">
+        <h6 [ngStyle]="{'margin-top': '1.3px', 'margin-right': '10px'}">Prix : </h6>
+        <p class="card-text" >{{product.prix}} €</p>
+      </div>
+      <button class="btn btn-primary" (click)="onAddToCart()">Ajouter au panier</button>
+    </div>
+    <div class="card-footer text-muted">
+      Disponible
+    </div>
+  </div>

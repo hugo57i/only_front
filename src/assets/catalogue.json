@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "nom": "Lampe led bande 5M",
+        "prix": 20,
+        "type": "Design",
+        "categorie": "Lampe",
+        "pathImg": "assets/img/lampeLed.jpg",
+        "description": "Ce kit ruban LED de 5 m peut s'installer dans toutes vos pièces, hors salle de bains. Grâce à la télécommande incluse, vous pouvez piloter vos changements de couleurs, créer votre ambiance avec les 15 couleurs proposées, les 4 scénarios programmés et faire varier l'intensité lumineuse. Le ruban est coupable tous les 10 cm, mais ne se raccorde pas. Il n'est pas siliconé. Le rendu lumineux est de 120 lumens par mètre, idéal pour un effet décoratif. Ce kit est vendu avec une transformateur sur prise secteur et un interrupteur."
+    },
+    {
+        "id": 2,
+        "nom": "Lampe de table",
+        "prix": 10,
+        "type": "Design",
+        "categorie": "Lampe",
+        "pathImg": "assets/img/lampeDeTable.jpg",
+        "description": "Cette lampe est composée de deux éléments qui ressemblent à de longs bras et ne dispose pas d’un abat-jour ordinaire. Cette lampe de bureau LED assure malgré tout un excellent éclairage sur le bureau, ce qui est notamment dû à la forme allongée de la tête de lampe qui abrite de nombreuses LED. L’élément lumineux peut en outre être déplacé vers le haut et vers le bas ce qui permet d’adapter l’éclairage."
+    },
+    {
+        "id": 3,
+        "nom": "Horloge led",
+        "prix": 10,
+        "type": "Design",
+        "categorie": "Horloge",
+        "pathImg": "assets/img/horlogeLed.jpg",
+        "description": "Horloge murale LED - Cadran ABS - Dos PS - Ø 30 cm Nouvelle technologie et design - Grande visibilité de l'heure - Technologie LED couleur rouge"
+    },
+    {
+        "id": 4,
+        "nom": "Horloge originale",
+        "prix": 25,
+        "type": "Design",
+        "categorie": "Horloge",
+        "pathImg": "assets/img/horlogeOriginale.jpg",
+        "description": "Zivos. Originale et très décorative, la grande horloge en métal recouvert d'une peinture époxy marron effet vieilli."
+    },
+    {
+        "id": 5,
+        "nom": "Scanner 3D",
+        "prix": 350,
+        "type": "Office",
+        "categorie": "Scanner",
+        "pathImg": "assets/img/scanner3D.jpg",
+        "description": "Avec les nouvelles générations de scanners 3D, maximisez votre capacité de numérisation 3D sur votre bureau. Si son cadet, proposait un scanner et un plateau dissocié entre lesquels jonchaient de nombreux câbles en tous genres et des ajustements de calibration, il vous apportera lui un scanner fait d'un bloc pour des scans 3D plus simples et intuitifs !"
+    },
+    {
+        "id": 6,
+        "nom": "Scanner classique",
+        "prix": 40,
+        "type": "Office",
+        "categorie": "Scanner",
+        "pathImg": "assets/img/scannerEpson.jpg",
+        "description": "Le scanner EPSON Perfection V39 possède une seule et unique connectique USB. À travers celle-ci, le scanner s'alimente et partage les informations avec votre ordinateur. Équipé d'un socle intégré, vous avez également la possibilité de le positionner à la verticale pour un net gain de place."
+    },
+    {
+        "id": 7,
+        "nom": "Imprimante 3D",
+        "prix": 320,
+        "type": "Office",
+        "categorie": "Imprimante",
+        "pathImg": "assets/img/imprimante3D.jpg",
+        "description": "Cette imprimante 3D se distingue par son étonnante simplicité d'utilisation. Elle dispose d'une résolution de 100 à 400 microns et d'un plateau d'impression en aluminium d'une surface de 15x15x15 cm,  pour des impressions plus larges et plus fines."
+    },
+    {
+        "id": 8,
+        "nom": "Imprimante Multifonction",
+        "prix": 80,
+        "type": "Office",
+        "categorie": "Imprimante",
+        "pathImg": "assets/img/imprimanteMultifonctionHP.jpg",
+        "description": "Bénéficiez d’impressions abordables et d'une plus grande polyvalence. Configurez, connectez-vous et imprimez, directement depuis votre smartphone et obtenez des photos de haute qualité et des documents de tous les jours, en économisant jusqu'à 70 % sur l’encre avec HP Instant Ink. Imprimez, numérisez et copiez avec facilité."
+    },
+    {
+        "id": 9,
+        "nom": "Jbl Charge 2+ Noir",
+        "prix": 140,
+        "type": "Multimedia",
+        "categorie": "Enceinte portable",
+        "pathImg": "assets/img/jblCharge2+.jpg",
+        "description": "Actualisée avec un nouveau style et une protection contre les projections d'eau, la Charge 2+ sait faire la fête partout. Que ce soit pour mettre l'ambiance au bord de la piscine, sur un bateau ou pour danser sous la pluie, elle amplifie le fun avec ses deux boomers passifs JBL. L'enceinte est alimentée par une batterie de 6000 mAh offrant une autonomie incroyable de 12 heures et pouvant recharger tous vos appareils via USB, tels que votre smartphone ou votre tablette. La Charge 2+ comprend également une fonction mains libres à réduction de bruit et d'écho intégrée afin que vous puissiez passer des appels au son cristallin en appuyant sur un simple bouton. Devenez un véritable DJ avec vos amis pour partager votre playlist favorite avec le mode social en connectant jusqu'à 3 sources de musique à l'enceinte et en diffusant leur contenu audio à tour de rôle."
+    },
+    {
+        "id": 10,
+        "nom": "Jbl Xtreme noir",
+        "prix": 300,
+        "type": "Multimedia",
+        "categorie": "Enceinte portable",
+        "pathImg": "assets/img/jblXtreme.jpg",
+        "description": "Le baffle JBL Xtreme est une enceinte transportable qui garantit un son captivant et des basses puissantes, tout simplement avec la connexion Bluetooth de votre appareil. Profitez de la qualité audio JBL à l'intérieur comme à l'extérieur, l'enceinte sans fil est totalement étanche et s'emporte pratiquement grâce à une sangle de transport, avec un décapsuleur intégré ! Partez à l'aventure avec votre Xtreme , sans craintes."
+    },
+    {
+        "id": 11,
+        "nom": "Playstation 4 PRO",
+        "prix": 450,
+        "type": "Multimedia",
+        "categorie": "Console de jeu",
+        "pathImg": "assets/img/ps4Pro.jpg",
+        "description": "La PlayStation 4 Pro vous invite au jeu du futur. Deux fois plus puissante, elle conquerra tous les gamers en quête de toujours plus de fluidité et de netteté. Les différentes fonctionnalités de pointe offertes par la console et la manette DualShock 4 boostent votre expérience de jeu, en le rendant plus dynamique, ultra-réaliste et incroyablement connecté, le tout en 4K. Plus qu’une console de jeux, c'est une passerelle vers des univers à couper le souffle."
+    },
+    {
+        "id": 12,
+        "nom": "Xbox One",
+        "prix": 250,
+        "type": "Multimedia",
+        "categorie": "Console de jeu",
+        "pathImg": "assets/img/xboxOne.jpg",
+        "description": "La Xbox One, troisième console de Microsoft, est sortie en novembre 2013, un peu avant sa rivale la PlayStation 4. Elle est capable d'afficher du contenu en 1080p et accepte les disques durs externes."
+    }
+]

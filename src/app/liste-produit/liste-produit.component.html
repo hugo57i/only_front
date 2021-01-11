@@ -1,0 +1,10 @@
+<div [ngStyle]="{'display': 'flex', 'width': '100%', 'margin-bottom': '70px'}">
+    <div [ngStyle]="{'width': '100%'}">
+        <h2 class="title">Catalogue</h2>
+        <app-search-filter class="filter" [products]="products" [categories]="categories" [types]="types" (showedProductsEvent)='updateProducts($event)'></app-search-filter>
+        <div class="card-deck ml-3 mt-4 mr-2">
+            <app-card *ngFor="let product of showedProducts" [product]="product" ></app-card>
+        </div>
+        <h2 *ngIf="showedProducts && showedProducts.length <= 0" class="title">Aucun résultat trouvé</h2>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="d-flex justify-content-center " [ngStyle]="{'flex-direction': 'column', 'place-items': 'center'}">
+    <div *ngIf="alreadyConnected" [ngStyle]="{'text-align': 'center'}">
+        <h4>Vous êtes connecté ! </h4>
+        <p>{{login}}</p>
+        <button type="button" class="btn btn-danger" (click)="onDisconnect()" >Se déconnecter</button>
+    </div>
+    <div *ngIf="!alreadyConnected" [ngStyle]="{'text-align': 'center'}">
+        <h4>Se connecter</h4>
+        <span *ngIf="wrongLogs" class="badge badge-pill badge-danger">Login ou mot de passe incorrect !</span>
+        <form (ngSubmit)="onSubmit()" [ngStyle]="{'text-align': 'center'}">  
+            <div class="form-group " [ngStyle]="{'text-align': 'center'}">
+                <label for="inputLogin4">Login</label>
+                <input name="login" [ngClass]="login === '' ? 'errorField' : ''" [ngModel]="login" (ngModelChange)="login = $event" type="text" class="form-control" id="inputLogin4" required>
+                <span *ngIf="login === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+            </div>
+            <div class="form-group" [ngStyle]="{'text-align': 'center'}" >
+                <label for="inputPassword4">Mot de passe</label>
+                <input name="motDePasse" [ngClass]="motDePasse === '' ? 'errorField' : ''" [ngModel]="motDePasse" (ngModelChange)="motDePasse = $event" type="password" class="form-control" id="inputPassword4" required>
+                <span *ngIf="motDePasse === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="checkValues()" >Se connecter</button>
+        </form>
+    </div>
+</div>

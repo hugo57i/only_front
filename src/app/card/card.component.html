@@ -1,0 +1,11 @@
+<div class="card mt-2" [ngStyle]="{'width': '235px'}">
+    <img [src]="'../../' + product.pathImg" class="card-img-top" alt="Aucune image trouvée" width="250" height="210">
+    <div class="card-body">
+      <h6 class="card-title">{{product.nom}}</h6>
+      <p class="card-text">{{product.prix}} €</p>
+    </div>
+    <div class="card-footer div-button">
+        <button type="button" class="btn btn-info button-font" [ngStyle]="{'margin-right': '2px'}" (click)="onDetailsRequest()">Détails</button>
+        <button type="button" class="btn btn-primary button-font" (click)="onAddToCart()">Ajouter au panier</button>
+    </div>
+  </div>

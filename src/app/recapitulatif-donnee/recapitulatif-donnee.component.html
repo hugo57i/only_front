@@ -1,0 +1,33 @@
+
+<table class="table elem-center">
+    <thead>
+      <tr class="table-info">
+        <th scope="col">Civilité</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prénom</th>
+        <th scope="col">Login</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mot de passe</th>
+        <th scope="col">Adresse</th>
+        <th scope="col">Ville</th>
+        <th scope="col">Code postal</th>
+        <th scope="col">Pays</th>
+        <th scope="col">Numéro de téléphone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{user.civilite}}</th>
+        <td>{{user.nom}}</td>
+        <td>{{user.prenom}}</td>
+        <td>{{user.login}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.motDePasse}}</td>
+        <td>{{user.adresse}}</td>
+        <td>{{user.ville}}</td>
+        <td>{{user.codePostal}}</td>
+        <td>{{user.pays.name}}</td>
+        <td>{{user.pays.dial_code}} {{user.telephone | phonepipe:user.pays}}</td>
+      </tr>
+    </tbody>
+  </table>

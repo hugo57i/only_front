@@ -1,0 +1,7 @@
+{
+    "/api/*":
+    {
+        "target": "https://back-tp05.herokuapp.com",
+        "secure": false
+    }
+}

@@ -1,0 +1,30 @@
+.elem-center {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+
+.text-empty {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+
+.total {
+    width: 70%;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+
+.price-display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

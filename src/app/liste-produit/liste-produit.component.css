@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+    margin-top: 4px;
+}
+
+.filter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,21 @@
+<div class="search">
+    <label for="searchInput">Rechercher par nom :</label>
+    <input id="searchInput" class="form-control mr-sm-2 " type="search" placeholder="Rechercher par nom..." aria-label="Rechercher" [ngModel]="searchFilter" (ngModelChange)="searchByName($event)">
+</div>
+<div class="element">
+    <label for="selectType">Filtrer par type :</label>
+    <select class="form-control" id="selectType" (change)="onTypeChanged($event)">
+        <option selected value="Aucune">Aucune</option>
+        <option *ngFor="let type of types">{{type}}</option>
+    </select>
+</div>
+<div class="element">
+    <label for="selectCategory">Filtrer par catégorie :</label>
+    <select class="form-control" id="selectCategory" (change)="onCategoryChanged($event)">
+        <option selected value="Aucune">Aucune</option>
+        <option *ngFor="let category of categories">{{category}}</option>
+    </select>
+</div>
+<div class="element">
+    <ng5-slider [(value)]="minValue" [(highValue)]="maxValue" [options]="options" (valueChange)="priceChange()"></ng5-slider>
+</div>

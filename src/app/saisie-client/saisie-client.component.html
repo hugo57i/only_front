@@ -1,0 +1,86 @@
+<h2 class="elem-center">Saisir un compte client</h2>
+<div class="elem-center">
+<form id="formulaire" (ngSubmit)="onSubmit()">      
+    <div class="form-row">
+        <div class="form-group col-md-2">
+            <label for="inputCivilite">Civilité</label>
+            <select name="civilite" [ngModel]="civilite" (ngModelChange)="civilite = $event" id="inputCivilite" class="form-control">
+              <option selected>Mr.</option>
+              <option>Mme.</option>
+            </select>
+        </div>
+      <div class="form-group col-md-5">
+        <label for="inputNom4">Nom</label>
+        <input name="nom" [ngClass]="nom === '' ? 'errorField' : ''" [ngModel]="nom" (ngModelChange)="nom = $event" type="text" class="form-control" id="inputNom4" required>
+        <span *ngIf="nom === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+      </div>
+      <div class="form-group col-md-5">
+        <label for="inputPrenom4">Prénom</label>
+        <input name="prenom" [ngClass]="prenom === '' ? 'errorField' : ''" [ngModel]="prenom" (ngModelChange)="prenom = $event" type="text" class="form-control" id="inputPrenom4" required>
+        <span *ngIf="prenom === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputLogin4">Login</label>
+            <input name="login" [ngClass]="login === '' ? 'errorField' : ''" [ngModel]="login" (ngModelChange)="login = $event" type="text" class="form-control" id="inputLogin4" required>
+            <span *ngIf="login === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+          </div>
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input name="email" [ngClass]="email === '' || falseEmail ? 'errorField' : ''" [ngModel]="email" (ngModelChange)="checkEmail($event)" type="email" class="form-control" id="inputEmail4" required>
+        <span *ngIf="email === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+        <span *ngIf="falseEmail" class="badge badge-pill badge-danger">Mauvaise syntaxe</span>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Mot de passe</label>
+        <input name="motDePasse" [ngClass]="motDePasse === '' ? 'errorField' : ''" [ngModel]="motDePasse" (ngModelChange)="motDePasse = $event" type="password" class="form-control" id="inputPassword4" required>
+        <span *ngIf="motDePasse === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputConfirmPassword4">Confirmation du mot de passe</label>
+        <input name="confirm" type="password" [ngClass]="confirm === '' || motDePasse !== confirm ? 'errorField' : ''" [ngModel]="confirm" (ngModelChange)="confirm = $event" class="form-control" id="inputConfirmPassword4" required>
+        <span *ngIf="motDePasse !== confirm" class="badge badge-pill badge-danger">Mots de passe différents</span>
+        <span *ngIf="motDePasse === confirm && confirm === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Adresse</label>
+      <input name="adresse" [ngClass]="adresse === '' ? 'errorField' : ''" [ngModel]="adresse" (ngModelChange)="adresse = $event" type="text" class="form-control" id="inputAddress" required>
+      <span *ngIf="adresse === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-10">
+        <label for="inputCity">Ville</label>
+        <input name="ville" [ngClass]="ville === '' ? 'errorField' : ''" [ngModel]="ville" (ngModelChange)="ville = $event" type="text" class="form-control" id="inputCity" required>
+        <span *ngIf="ville === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Code postal</label>
+        <input name="codePostal" [ngClass]="codePostal === '' ? 'errorField' : ''" [ngModel]="codePostal" (ngModelChange)="codePostal = $event" type="text" class="form-control" id="inputZip" required>
+        <span *ngIf="codePostal === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+      </div>
+      <div class="form-group col-md-8">
+        <label for="inputPays">Pays</label>
+        <select id="inputPays" [ngModel]="pays" class="form-control" (ngModelChange)="onValueChanged($event)" name="countSel">
+          <option [ngValue]="country" *ngFor="let country of countries" >{{country.name}}</option>
+        </select> 
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputPhone">Numéro de téléphone</label>
+        <div class="input-group input-group-sm mb-4">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">{{pays.dial_code}}</span>
+          </div>
+          <input name="telephone" [ngClass]="telephone === '' ? 'errorField' : ''" [ngModel]="telephone" (ngModelChange)="telephone = $event" id="inputPhone" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" (keypress)="numberOnly($event)" required>
+        </div>
+        <span *ngIf="telephone === ''" class="badge badge-pill badge-danger">Ce champ est requis</span>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="checkValues()">Créer</button>
+  </form>
+</div>
+<app-recapitulatif-donnee [user]='user'></app-recapitulatif-donnee>
+<notifier-container></notifier-container>

@@ -1,0 +1,17 @@
+.elem-center {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+#formulaire {
+    background-color: #e3f2fd;
+    border: #918c8c 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.errorField {
+    border-color: #dc3545 ;
+}
